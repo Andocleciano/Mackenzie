@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Notas_Aluno</title>
+</head>
+<body>
+    <script>
+        var titulo = ['nota1','nota2','nota3','nota4'];
+        var notas = [0,0,0,0];
+        for(var i = 0; i < 4; i++){
+            do {
+                var res = prompt("Digite a " + titulo[i] + ":");
+                if (res != null && res != "") {
+                    notas[i] = parseFloat(res);
+                }
+            }while(res == null || res == "");
+        }
+        var media = notas[0] + notas[1] + notas[2] + notas[3];
+        media = media / 4;
+        alert("notas = " + notas + "\n média = " + media);
+    </script>
+</body>
+</html>

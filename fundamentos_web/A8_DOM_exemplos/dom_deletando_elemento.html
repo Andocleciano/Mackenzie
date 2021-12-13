@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+</head>
+<body>
+	<ul>
+	    <li>Café</li>
+	    <li>Chá</li>
+	    <li>Leite</li>
+	    <li>Chocolate</li>
+	</ul>
+	<script>
+		// Obtendo referências
+		var lista = document.getElementsByTagName('ul')[0];
+		var itens = lista.getElementsByTagName('li');
+		// Removendo determinado elemento - Leite
+		lista.removeChild(itens[0])
+	</script>
+</body></html>

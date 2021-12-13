@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>A8 - Aplicando conhecimento</title>
+    </head>
+    <script>
+        function onBodyLoad()
+        {
+        const day = new Date();
+        const hour = day.getHours();
+        const dia = day.getDay();
+
+        var texto1;
+        var text2 = "hoje é "
+
+        if(hour >= 0 && hour <= 12)
+            texto1 = "Bom Dia"
+        else if(hour > 12 && hour <= 18)
+            texto1 = "Boa Tarde"
+        else
+            texto1 = "Boa Noite"
+
+        switch(dia){
+            case 0:
+            text2 += "domingo";
+            break;
+            case 1:
+            text2 += "segunda-feira";
+            break;
+            case 2:
+            text2 += "terça-feira";
+            break;
+            case 3:
+            text2 += "quarta-feira";
+            break;
+            case 4:
+            text2 += "quinta-feira";
+            break;
+            case 5:
+            text2 += "sexta-feira";
+            break;
+            case 6:
+            text2 += "sábado";
+            break;
+            default:
+            break;
+        }
+        var msg = "Sou o André de Souza Ocleciano \r\nSP - ADS - MACKENZIE\r\n";
+        msg += texto1 + "! " + text2;
+        alert(msg);
+        }
+    </script>
+    <body  onload="onBodyLoad()">
+        
+    </body>
+</html>
+

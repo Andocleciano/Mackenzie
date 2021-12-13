@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Teste do DOM Moddle</title>
+        <meta charset="UTF-8">
+        <style>
+            .teste{background:orange}
+        </style>
+    </head>
+    <body>
+        <div id="id1" style="background:yellow; height:150px;width:450px; text-align:center">
+            <button style="margin-top: 30px;">OI PESSOAL</button>
+        </div>
+        <br><br>
+
+
+       
+
+        <script>
+            var criacao = document.createElement("p");  /* Declarando a variavel "criacao" para criação do elemento <p> */
+            criacao.innerHTML = "Estamos criando um parágrafo com método createElement() do DOM.";  /* Inserindo texto no elemento criado*/
+
+            document.getElementById("id1").appendChild(criacao); /* posicionamento do elemento criado (qual nó será criado)*/
+
+            /*o createElement é armazenado em um var, ele só adicionado à árvore com o appendChild e o appendChild especifica qual elemento vai adicionar esse nó, exemplo no parágrafo da var criacao */
+
+            var atributo = document.querySelector("button");
+            atributo.setAttribute("class", "teste");
+        </script>
+    </body>
+</html>

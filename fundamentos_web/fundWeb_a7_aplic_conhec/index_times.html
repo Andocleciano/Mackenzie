@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Time_Preferido</title>
+        <script>
+            var meu_arr = [["LBFA","Rio Preto Weilers",6,"Preto"],["NBA","Los Angeles Lakers",5,"Amarelo"],["GOALBALL","APADV",3,"Vermelho"]];
+        </script>
+    </head>
+    <body>
+        <script>
+            for(var i = 0; i < meu_arr.length;i++) {
+                document.write(meu_arr[i] + "<br/>");
+            }
+        </script>
+        <form>
+            <h1>Escolha uma cor predominante: </h1>
+            <input type="radio" id="Preto" name="color" value="Preto" onclick="onClick(0)">
+            <label htmlFor="Preto">Preto</label><br>
+            <input type="radio" id="Amarelo" name="color" value="Amarelo" onclick="onClick(1)">
+            <label htmlFor="Amarelo">Amarelo</label><br>
+            <input type="radio" id="Vermelho" name="color" value="Vermelho" onclick="onClick(2)">
+            <label htmlFor="Vermelho">Vermelho</label>
+        </form>
+        <script>
+            var imgs = ["weilers_rio_preto.png","los_angeles_lakers.png","apadv.jpg"];
+            function onClick(index) {
+                document.write(meu_arr[index][0] + "</br>");
+                document.write(meu_arr[index][1] + "</br>");
+                document.write(meu_arr[index][2] + "</br>");
+                document.write("<img src='"+ imgs[index] + "'/></br>");
+                document.write("<a href='index_times.html'>voltar</a>")
+            }
+        </script>
+    </body>
+</html>

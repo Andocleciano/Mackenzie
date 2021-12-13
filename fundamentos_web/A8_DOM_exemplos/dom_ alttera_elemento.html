@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <ul class="example">
+        <li class="child">Café</li>
+        <li class="child">Chá</li>
+    </ul>
+    <p>Clique no botão e troque o primeiro item da lista (index 0).</p>
+    <button onclick = "trocaItem()">Clique aqui</button>
+    <p><strong>Observe:</strong>O método getElementsByClassName() busca o elemento pelo nome da classe.</p>
+    
+    <script>
+        function trocaItem(){
+        
+            var list = document.getElementsByClassName("example") [0];
+            list.getElementsByClassName("child")[0].innerHTML = "LEITE";
+        }
+    </script>
+
+</body>
+</html>
